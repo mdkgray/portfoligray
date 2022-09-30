@@ -59,20 +59,15 @@ function Navigation(props) {
             <ul className="flex-row">
                 {pages.map((page) => (
                     <li
-                        className={`mx-5 ${
-                            currentPage.name === page.name && 'navActive'
-                            }`}
+                        className={`mx-5 ${currentPage.name === page.name && 'navActive'}`}
                         key={page.name}
                     >
-                    <span
-                        onClick={() => setCurrentPage(page)}
-                    >
-                        {page.name}
-                    </span>
+                        <span onClick={() => setCurrentPage(page)}>{page.name}</span>
                     </li>
                 ))}
             </ul>
         </nav>
     );
 }
+
 export default Navigation;

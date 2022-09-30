@@ -12,7 +12,7 @@ function App() {
     {
       name: "About"
     },
-    { name: "Portfolio" },
+    { name: "Projects" },
     { name: "Contact" },
     {
       name: "Resume"
