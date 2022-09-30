@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import React from 'react';
+import { useState } from 'react';
 import './App.css';
 
 import Header from '../src/components/Header';
@@ -8,9 +9,19 @@ import PageContainer from './components/PageContainer';
 import Footer from './components/Footer';
 
 function App() {
-  const pages = ['About', 'Portfolio', 'Contact', 'Resume'];
-  const [currentPage, setCurrentPage] = useState({page});
+  const [pages] = useState([
+    {
+      name: "About"
+    },
+    { name: "Portfolio" },
+    { name: "Contact" },
+    {
+      name: "Resume"
+    }
+  ]);
 
+  const [currentPage, setCurrentPage] = useState(pages[0]);
+  
   return (
     <div className="App">
       <Header >
