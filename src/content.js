@@ -2,7 +2,7 @@ import headshot from './assets/images/headshot.png';
 
 const header = {
     homepage: 'https://github.com/mdkgray/portfoligray', 
-    title: 'Portfoligray'
+    title: 'MG'
 }
 
 const about = {
