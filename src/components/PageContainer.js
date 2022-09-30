@@ -28,7 +28,7 @@ export default function ProfileContainer() {
     return (
         <div>
             <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
-        {renderPage()}
+            {renderPage()}
         </div>
     );
 }
