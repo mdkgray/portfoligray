@@ -1,39 +1,30 @@
-// import logo from './logo.svg';
-import React, { useState } from "react";
+import React from "react";
 import './App.css';
-
-import Header from '../src/components/Header';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import Header from '../src/components/Header';
 import Navigation from '../src/components/Navigation';
-import PageContainer from './components/PageContainer';
+// import PageContainer from './components/PageContainer';
 import Footer from './components/Footer';
+import Resume from "./components/Pages/Resume";
+import About from "./components/Pages/About";
+import Contact from "./components/Pages/Contact";
+import Projects from "./components/Pages/Projects";
 
 function App() {
-  const [pages] = useState([
-    {
-      name: "About"
-    },
-    { name: "Projects" },
-    { name: "Contact" },
-    {
-      name: "Resume"
-    }
-  ]);
-
-  const [currentPage, setCurrentPage] = useState(pages[0]);
-
   return (
     <div className="App">
-      <Header >
-        <Navigation>
-          pages={pages},
-          setCurrentPage={setCurrentPage},
-          currentPage={currentPage}
-        </Navigation> 
-      </Header>
-      <PageContainer
-        currentPage={currentPage} 
-      />
-      <Footer />
+
+      <Router>
+        <Navigation/>
+          <Routes>
+            <Route path="/About" exact element={ <About/>} />
+            <Route path="/Projects" exact element={ <Projects/> } />
+            <Route path="/Contact" exact element={ <Contact/> } />
+            <Route path="/Resume" exact element={ <Resume/> } />
+          </Routes>
+      </Router>
+      <Footer></Footer>
+      
     </div>
   );
 }

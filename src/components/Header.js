@@ -1,6 +1,6 @@
 import React from 'react'
 import Navigation from './Navigation';
-import { header } from '../../src/content'
+import { header } from '../../src/content';
 
 
 function Header() {

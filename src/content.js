@@ -1,4 +1,4 @@
-import headshot from './assets/images/headshot.png';
+import headshot from './assets/images/headshot.jpg';
 
 const header = {
     homepage: '', 
