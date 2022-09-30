@@ -1,12 +1,45 @@
+import { Pages } from '@material-ui/icons';
 import React from 'react';
 
-function Navigation({ currentPage, handlePageChange }) {
-return (
+function Navigation({ currentPage, setCurrentPage }) {
+    const pages = pages.map((page) => {
+        <li>{page}</li>
+    }); 
+
+
+    return (
         <ul className="">
+            {/* {pages.map(page) => (
+                <li key={page}>
+                    page
+                    onClick={() => setCurrentPage(page)}
+                </li>
+            )}
+
+
+            <ul>
+                {
+                pages.map(page)(function(item, i){
+                    <li>
+                        key={page},
+                        onClick={() => setCurrentPage(page)}
+                    </li>
+                })
+                }
+            </ul>
+            */}
+
+            <li>
+                <a>
+                    
+                </a>
+            </li>
+
+
             <li className="">
                 <a
                     href="#about"
-                    onClick={() => handlePageChange('About')}
+                    onClick={() => setCurrentPage('About')}
                     className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
                 >
                     About
@@ -16,7 +49,7 @@ return (
             <li className="">
                 <a
                     href="#portfolio"
-                    onClick={() => handlePageChange('Portfolio')}
+                    onClick={() => setCurrentPage('Portfolio')}
                     className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
                 >
                     Portfolio
@@ -26,7 +59,7 @@ return (
             <li className="">
                 <a
                     href="#contact"
-                    onClick={() => handlePageChange('Contact')}
+                    onClick={() => setCurrentPage('Contact')}
                     className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
                 >
                     Contact
@@ -36,7 +69,7 @@ return (
             <li className="">
                 <a
                     href="#resume"
-                    onClick={() => handlePageChange('Resume')}
+                    onClick={() => setCurrentPage('Resume')}
                     className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
                 >
                     Resume

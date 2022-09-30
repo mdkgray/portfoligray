@@ -7,8 +7,8 @@ import Portfolio from '../components/Pages/Portfolio';
 import Resume from '../components/Pages/Resume';
 import Navigation from './Navigation';
 
-export default function ProfileContainer() {
-    const [currentPage, setCurrentPage] = useState('About');
+export default function ProfileContainer(currentPage, setCurrentPage) {
+    // const [currentPage, setCurrentPage] = useState('About');
 
     const renderPage = () => {
         if (currentPage === 'About') {

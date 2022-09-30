@@ -8,16 +8,21 @@ import PageContainer from './components/PageContainer';
 import Footer from './components/Footer';
 
 function App() {
+  const pages = ['About', 'Portfolio', 'Contact', 'Resume'];
+  const [currentPage, setCurrentPage] = useState({page});
+
   return (
     <div className="App">
       <Header >
         <Navigation>
-          pages=
-          setCurrentPage=
-          currentPage
+          pages={pages},
+          setCurrentPage={setCurrentPage},
+          currentPage={currentPage}
         </Navigation> 
       </Header>
-      <PageContainer />
+      <PageContainer
+        currentPage={currentPage} 
+      />
       <Footer />
     </div>
   );
