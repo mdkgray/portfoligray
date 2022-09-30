@@ -1,6 +1,5 @@
 // import logo from './logo.svg';
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from "react";
 import './App.css';
 
 import Header from '../src/components/Header';
@@ -21,7 +20,7 @@ function App() {
   ]);
 
   const [currentPage, setCurrentPage] = useState(pages[0]);
-  
+
   return (
     <div className="App">
       <Header >
