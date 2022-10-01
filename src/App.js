@@ -23,7 +23,8 @@ function App() {
             <Route path="/Resume" exact element={ <Resume/> } />
           </Routes>
       </Router>
-      <Footer></Footer>
+      <br />
+      <Footer />
       
     </div>
   );

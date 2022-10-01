@@ -2,7 +2,7 @@ import headshot from './assets/images/headshot.jpg';
 
 const header = {
     homepage: '', 
-    title: 'MG'
+    imgFile: 'ZORB.jpg'
 }
 
 const about = {

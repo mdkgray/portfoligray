@@ -1,6 +1,6 @@
 import React from 'react'
 import Navigation from './Navigation';
-import { header } from '../../src/content';
+import { header } from '../../src/content'
 
 
 function Header() {
@@ -8,15 +8,7 @@ function Header() {
 
     return (
     <div className='header center'>
-        <h2>
-            {homepage ? (
-                <a href={homepage} className='link'>
-                    {title}
-                </a>
-            ) : (
-                title
-            )}
-        </h2>
+        <h2>Mackenzie Gray</h2>
         <Navigation />
     </div>
     )

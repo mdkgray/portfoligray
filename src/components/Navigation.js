@@ -14,9 +14,6 @@ function Navigation() {
     
     return (
         <header className="top-header">
-            <h1 className='logo flex-row-all'>
-                <a className='logo no-underline' href="/About">MG</a>
-            </h1>
             <nav className='nav-list'>
                 <ul className="nav-list flex-row mx-2 no-underline">{navList}</ul>
             </nav>
