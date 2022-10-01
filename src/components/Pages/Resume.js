@@ -7,3 +7,5 @@ export default function Resume() {
     </div>
     );
 }
+
+// add a tag for link to resume and add icons for skills 
