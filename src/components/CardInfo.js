@@ -25,8 +25,8 @@ export default function CardInfo(props) {
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <a href={props.sourceCode}><Button size="small" variant="contained">GitHub</Button></a>
-                    <a href={props.livePreview}><Button size="small" variant="outlined">Deployed</Button></a>
+                    <a href={props.sourceCode} target="_blank" rel="noopener noreferrer"><Button size="small" variant="contained">GitHub</Button></a>
+                    <a href={props.livePreview} target="_blank" rel="noopener noreferrer"><Button size="small" variant="outlined">Deployed</Button></a>
                 </CardActions>
             </Card> 
         </div>

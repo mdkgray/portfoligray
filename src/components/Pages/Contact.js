@@ -30,9 +30,9 @@ export default function Contact() {
                         </a>
                     </div>
                     <div>
-                        <a href={about.social.github} className="mx-2"><GitHubIcon /></a>
-                        <a href={about.social.linkedin} className="mx-2"><LinkedInIcon /></a>
-                        <a href={about.social.twitter} className="mx-2"><TwitterIcon /></a>
+                        <a href={about.social.github} target="_blank" rel="noopener noreferrer" className="mx-2"><GitHubIcon /></a>
+                        <a href={about.social.linkedin} target="_blank" rel="noopener noreferrer" className="mx-2"><LinkedInIcon /></a>
+                        <a href={about.social.twitter} target="_blank" rel="noopener noreferrer" className="mx-2"><TwitterIcon /></a>
                     </div>
                 </Box>
                 <Box
