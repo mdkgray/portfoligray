@@ -8,22 +8,32 @@ import Contact from "./components/Pages/Contact";
 import Projects from "./components/Pages/Projects";
 import Header from "./components/Header";
 
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
+
+const darkTheme = createTheme({
+  palette: {
+    mode: 'dark',
+  },
+});
+
 function App() {
   return (
     <div className="App">
-      
-      <Router>
-        <Header />
+      <ThemeProvider theme={darkTheme}>
+        <CssBaseline />
+        <Router>
+          <Header />
           <Routes>
             <Route path="/About" exact element={ <About/>} />
             <Route path="/Projects" exact element={ <Projects/> } />
             <Route path="/Contact" exact element={ <Contact/> } />
             <Route path="/Resume" exact element={ <Resume/> } />
           </Routes>
-      </Router>
+        </Router>
       <br />
       <Footer />
-      
+      </ThemeProvider>      
     </div>
   );
 }
