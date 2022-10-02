@@ -36,7 +36,6 @@ export default function Contact() {
                     label="Message"
                     multiline
                     rows={5}
-                    defaultValue="Message"
                 />
 
                 <Stack spacing={2} direction="row">
@@ -47,5 +46,3 @@ export default function Contact() {
         
     );
 }
-
-// make form with normal HTML elements

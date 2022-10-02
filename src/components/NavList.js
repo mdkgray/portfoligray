@@ -1,6 +1,6 @@
 export const NavList = [
     {
-        name: "About Me",
+        name: "About",
         url: "/About"
     },
     {
@@ -12,7 +12,7 @@ export const NavList = [
         url: "/Resume"
     },
     {
-        name: "Contact Me",
+        name: "Contact",
         url: "/Contact"
     }
 ]

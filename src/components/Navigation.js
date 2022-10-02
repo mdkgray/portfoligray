@@ -10,7 +10,7 @@ function Navigation() {
     const navList = NavList.map(({ url, name }, index) => {
         return(
         <li key={index}>
-            <NavLink to={url} className='nav-list nav-font flex-row mx-2 no-underline' activeclassname="active">{name}</NavLink>
+            <NavLink to={url} style={{ textDecoration: 'none' }} className='nav-list nav-font flex-row mx-2 no-underline' activeclassname="active">{name}</NavLink>
         </li>
         )
     });
@@ -20,7 +20,7 @@ function Navigation() {
             <header className="top-header">
                 <nav className='nav-list'>
                     <Stack spacing={2} direction="row">
-                        <ul className="nav-list flex-row mx-2 no-underline"></ul>
+                        <ul className="nav-list flex-row m-10"></ul>
                         <Button variant="text">{navList}</Button>
                     </Stack>                    
                 </nav>
