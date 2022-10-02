@@ -1,7 +1,6 @@
 import React from 'react';
 import { projects } from '../../content';
 import CardInfo from '../CardInfo';
-
 import { styled } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
@@ -21,23 +20,23 @@ export default function Projects() {
     return (
         <div>
             <h1>Projects</h1>
-            <Box sx={{ width: '100%' }}>
+            <Box sx={{ width: '100%', boxShadow: 1, m: 3, p: 3 }}>
                 <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} direction="row">
                     <Grid item xs={6}>
                         <Item>
-                        <div>
-                            {projects.map((project, i) => (
-                                <CardInfo
-                                    key={i}
-                                    name={project.name}
-                                    image={project.image}
-                                    description={project.description}
-                                    technologies={project.technologies}
-                                    sourceCode={project.sourceCode}
-                                    livePreview={project.livePreview}
-                                />
-                            ))}
-                        </div>
+                            <div>
+                                {projects.map((project, i) => (
+                                    <CardInfo
+                                        key={i}
+                                        name={project.name}
+                                        image={project.image}
+                                        description={project.description}
+                                        technologies={project.technologies}
+                                        sourceCode={project.sourceCode}
+                                        livePreview={project.livePreview}
+                                    />
+                                ))}
+                            </div>
                         </Item>
                     </Grid>
                 </Grid>

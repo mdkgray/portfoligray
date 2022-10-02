@@ -1,10 +1,8 @@
 import React from 'react';
 import { NavList } from "./NavList"
 import { NavLink } from "react-router-dom";
-
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
-
 
 function Navigation() {
     const navList = NavList.map(({ url, name }, index) => {
@@ -20,7 +18,7 @@ function Navigation() {
             <header className="top-header">
                 <nav className='nav-list'>
                     <Stack spacing={2} direction="row">
-                        <ul className="nav-list flex-row m-10"></ul>
+                        <ul className="nav-list flex-row"></ul>
                         <Button variant="text">{navList}</Button>
                     </Stack>                    
                 </nav>
@@ -28,6 +26,5 @@ function Navigation() {
         </div>        
     );
 }
-
 
 export default Navigation;
