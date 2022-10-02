@@ -11,7 +11,8 @@ const about = {
     resume: 'https://docs.google.com/document/d/1xrMoZIJozxEb6IeuwHAe5m69wsSm24ypRVbAMgtofhE/edit?usp=sharing',
     social: {
         github: 'https://github.com/mdkgray',
-        linkedin: 'https://www.linkedin.com/in/mackenzie-gray-5a68aa46/'
+        linkedin: 'https://www.linkedin.com/in/mackenzie-gray-5a68aa46/',
+        twitter: 'https://twitter.com/mackenzie_gray3'
     }
 }
 
