@@ -13,7 +13,7 @@ function Header() {
                 <Navbar.Brand href="about">
                     <img
                     alt="zorb"
-                    src="/assets/images/ZORB.png"
+                    src={process.env.PUBLIC_URL + "/assets/images/ZORB.png"}
                     width="30"
                     height="30"
                     className="d-inline-block align-top"

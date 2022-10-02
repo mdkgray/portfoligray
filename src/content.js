@@ -32,7 +32,6 @@ const projects = [
         sourceCode: 'https://github.com/mdkgray/employee_tracker', 
         livePreview: 'https://github.com/mdkgray/employee_tracker',
         image: '/assets/projectImages/employee_tracker.png'
-
     },
     {
         name: 'Tech Blog', 
@@ -41,7 +40,6 @@ const projects = [
         sourceCode: 'https://github.com/mdkgray/tech_blog', 
         livePreview: 'https://frozen-basin-60308.herokuapp.com/',
         image: '/assets/projectImages/tech_blog.png'
-
     },
     {
         name: 'Weather Dashboard', 
@@ -50,7 +48,6 @@ const projects = [
         sourceCode: 'https://github.com/mdkgray/weather_dashboard', 
         livePreview: 'https://mdkgray.github.io/weather_dashboard/',
         image: '/assets/projectImages/weather_app.png'
-
     },
     {
         name: 'Note Taker', 
@@ -59,7 +56,6 @@ const projects = [
         sourceCode: 'https://github.com/mdkgray/note_taker', 
         livePreview: 'https://calm-sea-51607.herokuapp.com/,',
         image: '/assets/projectImages/note_taker.png'
-
     },
     {
         name: 'Team Profile Generator', 
@@ -68,7 +64,6 @@ const projects = [
         sourceCode: 'https://github.com/mdkgray/team_profile_generator', 
         livePreview: 'https://github.com/mdkgray/team_profile_generator',
         image: '/assets/projectImages/team_generator.png'
-
     }
 ]
 

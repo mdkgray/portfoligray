@@ -13,7 +13,7 @@ export default function CardInfo(props) {
                 <CardMedia
                     component="img"
                     height="140"
-                    image={props.image}
+                    image={process.env.PUBLIC_URL + props.image}
                     alt={'projectImage'}
                 />
                 <CardContent>
