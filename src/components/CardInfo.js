@@ -9,7 +9,7 @@ import Typography from '@mui/material/Typography';
 export default function CardInfo(props) {
     return (
         <div>
-            <Card sx={{ maxWidth: 400 }}>
+            <Card>
                 <CardMedia
                     component="img"
                     height="140"

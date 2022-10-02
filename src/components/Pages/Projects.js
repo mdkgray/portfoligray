@@ -22,7 +22,7 @@ export default function Projects() {
         <div>
             <h1>Projects</h1>
             <Box sx={{ width: '100%' }}>
-                <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+                <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} direction="row">
                     <Grid item xs={6}>
                         <Item>
                         <div>
