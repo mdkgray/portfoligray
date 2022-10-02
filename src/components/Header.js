@@ -18,7 +18,7 @@ function Header() {
                     height="30"
                     className="d-inline-block align-top"
                     />{' '}
-                    MG
+                    Mackenzie Gray
                 </Navbar.Brand>
                 <Navigation />
             </Container>

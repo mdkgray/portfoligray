@@ -1,5 +1,6 @@
 import React from "react";
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from './components/Footer';
 import Resume from "./components/Pages/Resume";
@@ -20,8 +21,12 @@ const darkTheme = createTheme({
 function App() {
   return (
     <div className="App">
-      <ThemeProvider theme={darkTheme}>
+      <ThemeProvider 
+        theme={darkTheme}
+        breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
+        minBreakpoint="xxs">
         <CssBaseline />
+
         <Router>
           <Header />
           <Routes>
@@ -31,8 +36,9 @@ function App() {
             <Route path="/Resume" exact element={ <Resume/> } />
           </Routes>
         </Router>
-      <br />
-      <Footer />
+
+        <br />
+        <Footer />
       </ThemeProvider>      
     </div>
   );
