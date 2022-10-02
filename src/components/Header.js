@@ -6,7 +6,7 @@ function Header() {
 
     return (
     <div className='header center'>
-        <img src={'/assets/images/ZORB.png'}></img>
+        <img src={'/assets/images/ZORB.png'} className='' alt='zorb'></img>
         <Navigation />
     </div>
     )
