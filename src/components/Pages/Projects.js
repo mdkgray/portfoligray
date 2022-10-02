@@ -15,12 +15,10 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 export default function Projects() {
-    console.log(projects);
-
     return (
         <div>
             <h1>Projects</h1>
-            <Box sx={{ width: '100%', boxShadow: 1, m: 3, p: 3 }}>
+            <Box sx={{ width: '100%', boxShadow: 1, borderRadius: 2, margin: 3, padding: 3, }}>
                 <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} direction="row">
                     <Grid item xs={6}>
                         <Item>

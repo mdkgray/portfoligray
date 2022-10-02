@@ -14,7 +14,7 @@ export default function CardInfo(props) {
                     component="img"
                     height="140"
                     image={props.image}
-                    alt={''}
+                    alt={'projectImage'}
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
