@@ -8,8 +8,8 @@ function Header() {
 
     return (
     <div>
-        <Navbar bg="dark" variant="dark">
-            <Container>
+        <Navbar bg="dark" variant="dark" className="row">
+            <Container className="container width-100% d-flex justify-content-around">
                 <Navbar.Brand href="about">
                     <img
                     alt="zorb"
