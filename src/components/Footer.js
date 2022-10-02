@@ -1,4 +1,5 @@
 import React from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -6,10 +7,10 @@ import { about } from '../content';
 
 function Footer() {
     return (
-    <div>
-        <a href={about.social.github}><GitHubIcon /></a>
-        <a href={about.social.linkedin}><LinkedInIcon /></a>
-        <a href={about.social.twitter}><TwitterIcon /></a>
+    <div className="fixed-bottom m-3">
+        <a href={about.social.github} className="mx-2"><GitHubIcon /></a>
+        <a href={about.social.linkedin} className="mx-2"><LinkedInIcon /></a>
+        <a href={about.social.twitter} className="mx-2"><TwitterIcon /></a>
     </div>
     )
 }

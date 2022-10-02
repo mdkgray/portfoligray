@@ -16,19 +16,23 @@ import { about } from '../../content';
 
 export default function Contact() {
     return (
-        <React.Fragment>
+        <React.Fragment className="container">
             <CssBaseline />
-            <Container className="d-flex col-md-10">
-                <Box>
+            <Container className="container d-flex flex-direction-column col-md-11 justify-content-center mt-5">
+                <Box className="container row col-md-5">
                     <h1>Contact</h1>
                     <p>Get in touch</p>
                     <div>
-                        <a href="mailto:mdkulen@gmail.com"><EmailIcon />mdkulen@gmail</a>
+                        <a href="mailto:mdkulen@gmail.com">
+                            <Stack spacing={2} direction="row" centered={'true'}>
+                                <Button variant="contained" className="mx-auto"><EmailIcon className="m-1"/>mdkulen@gmail</Button>
+                            </Stack>
+                        </a>
                     </div>
                     <div>
-                        <a href={about.social.github}><GitHubIcon /></a>
-                        <a href={about.social.linkedin}><LinkedInIcon /></a>
-                        <a href={about.social.twitter}><TwitterIcon /></a>
+                        <a href={about.social.github} className="mx-2"><GitHubIcon /></a>
+                        <a href={about.social.linkedin} className="mx-2"><LinkedInIcon /></a>
+                        <a href={about.social.twitter} className="mx-2"><TwitterIcon /></a>
                     </div>
                 </Box>
                 <Box
@@ -36,6 +40,7 @@ export default function Contact() {
                     sx={{ '& .MuiTextField-root': { m: 1, width: '50ch'}}}
                     noValidate
                     autoComplete="off"
+                    className="container row col-md-6 justify-content-center"
                 >
                     <div className='col-md-9'>
                         <TextField
@@ -58,7 +63,7 @@ export default function Contact() {
                         />
 
                         <Stack spacing={2} direction="row">
-                            <Button variant="contained">Submit</Button>
+                            <Button variant="contained" className="mx-auto">Submit</Button>
                         </Stack>
                     </div>
                 </Box>                
@@ -66,4 +71,3 @@ export default function Contact() {
         </React.Fragment>        
     );
 }
-
