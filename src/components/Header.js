@@ -1,29 +1,42 @@
 import React from 'react'
 import Navigation from './Navigation';
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar';
+
+import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import IconButton from '@mui/material/IconButton';
 
 
 function Header() {
+    return (    
+        <Box sx={{ flexGrow: 1 }}>
+            <AppBar position="static">
+                <Toolbar>
+                    <IconButton
+                        size="large"
+                        edge="start"
+                        color="inherit"
+                        aria-label="menu"
+                        sx={{ mr: 2 }}
+                    >
+                        <img
+                            alt="zorb"
+                            src={process.env.PUBLIC_URL + "/assets/images/ZORB.png"}
+                            width="40"
+                            height="40"
+                            className="d-inline-block align-top"
+                        />
+                    </IconButton>
 
-    return (
-    <div>
-        <Navbar bg="dark" variant="dark" className="row">
-            <Container className="container width-100% d-flex justify-content-around">
-                <Navbar.Brand href="about">
-                    <img
-                    alt="zorb"
-                    src={process.env.PUBLIC_URL + "/assets/images/ZORB.png"}
-                    width="30"
-                    height="30"
-                    className="d-inline-block align-top"
-                    />{' '}
-                    Mackenzie Gray
-                </Navbar.Brand>
-                <Navigation />
-            </Container>
-        </Navbar>
-    </div>
+                    <Typography variant="h4" component="div" sx={{ flexGrow: 1, alignItems: 'center' }}>
+                        Mackenzie Gray
+                    </Typography>
+
+                    <Navigation />
+                </Toolbar>
+            </AppBar>
+        </Box>
     )
 }
 
