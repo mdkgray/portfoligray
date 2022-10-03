@@ -14,6 +14,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import EmailIcon from '@mui/icons-material/Email';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#001C55' : '#fff',
@@ -55,6 +56,15 @@ export default function Contact() {
                                         <Button variant="contained"><EmailIcon className="m-1"/>mdkulen@gmail</Button>
                                     </Stack>
                                 </Link>
+                                <Stack 
+                                    spacing={2} 
+                                    direction="row"
+                                    display="flex" 
+                                    justifyContent="center"
+                                    padding={4}
+                                    columns={{ xs: 1, sm: 8, md: 12 }}>
+                                    <Button variant="text"><LocationOnIcon />Sydney, Australia</Button>
+                                </Stack>
                             </Box>
                             <Box 
                                 margin={2}>
@@ -68,7 +78,7 @@ export default function Contact() {
 
                 <Grid 
                     item xs={11} 
-                    md={7}
+                    md={6}
                     container
                     display="flex" 
                     justifyContent="center"
@@ -101,7 +111,7 @@ export default function Contact() {
                                 />
                                 <TextField
                                     id="outlined-multiline-static"
-                                    label="Message"
+                                    label="What's on your mind?"
                                     multiline
                                     rows={5}
                                 />
