@@ -46,7 +46,11 @@ export default function Contact() {
                                 padding={4}
                                 margin={5}
                                 >
-                                <Link href="mailto:mdkulen@gmail.com" underline="none">
+                                <Link 
+                                    href="mailto:mdkulen@gmail.com" underline="none"
+                                    display="flex" 
+                                    justifyContent="center"
+                                    columns={{ xs: 1, sm: 8, md: 12 }}>
                                     <Stack spacing={2} direction="row" >
                                         <Button variant="contained"><EmailIcon className="m-1"/>mdkulen@gmail</Button>
                                     </Stack>
@@ -66,6 +70,9 @@ export default function Contact() {
                     item xs={11} 
                     md={7}
                     container
+                    display="flex" 
+                    justifyContent="center"
+                    columns={{ xs: 1, sm: 8, md: 12 }}
                     >
                     <Item>
                         <Box
@@ -75,6 +82,7 @@ export default function Contact() {
                             autoComplete="off"
                             display="flex" 
                             justifyContent="center"
+                            columns={{ xs: 1, sm: 8, md: 12 }}
                             >
                             <Box 
                                 padding={2}
