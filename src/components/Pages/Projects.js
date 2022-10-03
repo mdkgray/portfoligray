@@ -16,7 +16,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function Projects() {
     return (
-        <Box sx={{ flexGrow: 1 }}>
+        <Box sx={{ flexGrow: 1 }} padding={4} margin={4}>
             <Grid
                 container
                 spacing={{ xs: 2, md: 3 }}

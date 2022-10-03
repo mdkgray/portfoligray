@@ -27,7 +27,7 @@ export default function Resume() {
                 <Grid item xs={8}>
                     <h5>Skills</h5>
                     <Item>
-                        <ImageList sx={{ width: 500, height: 450 }} cols={4} rowHeight={164}>
+                        <ImageList sx={{ width: 500, height: 450 }} cols={4} rowHeight={164} padding={4}>
                         {skills.map((skills) => (
                             <ImageListItem key={skills.image}>
                             <img
