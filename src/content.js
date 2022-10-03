@@ -51,7 +51,7 @@ const projects = [
     },
     {
         name: 'Note Taker', 
-        description: 'A note taker application to allow business owners to write and save notes in order to keep track of tasks that need to be completed.', 
+        description: 'A note taker application to allow business owners to write and save notes in order to keep track of tasks that need to be completed. Too often are those little tasks forgotten about. Well no more with this nifty tool. ', 
         technologies: ['Express.js | Node.js | Javascript | CSS | HTML'], 
         sourceCode: 'https://github.com/mdkgray/note_taker', 
         livePreview: 'https://calm-sea-51607.herokuapp.com/,',
@@ -59,7 +59,7 @@ const projects = [
     },
     {
         name: 'Team Profile Generator', 
-        description: 'displays the  basic information of a work team in a HTML file. Using question prompts in the terminal, information such as email address and GitHub profiles can be generated and clicked to send an email or view the GitHib profile.', 
+        description: 'Command-line application used to display the basic information of a work team in a HTML file. Using question prompts in the terminal, information such as email address and GitHub profiles can be generated and subsequent connections can be made.', 
         technologies: ['Express.js | Node.js | Javascript | CSS | HTML | npm'], 
         sourceCode: 'https://github.com/mdkgray/team_profile_generator', 
         livePreview: 'https://github.com/mdkgray/team_profile_generator',
