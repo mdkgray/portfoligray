@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { projects } from '../../content';
 import CardInfo from '../CardInfo';
 import { styled } from '@mui/material/styles';
@@ -16,29 +17,33 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function Projects() {
     return (
-        <div>
-            <h1>Projects</h1>
-            <Box sx={{ width: '100%', boxShadow: 1, borderRadius: 2, margin: 3, padding: 3, }}>
-                <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} direction="row">
-                    <Grid item xs={6}>
-                        <Item>
-                            <div>
-                                {projects.map((project, i) => (
-                                    <CardInfo
-                                        key={i}
-                                        name={project.name}
-                                        image={project.image}
-                                        description={project.description}
-                                        technologies={project.technologies}
-                                        sourceCode={project.sourceCode}
-                                        livePreview={project.livePreview}
-                                    />
-                                ))}
-                            </div>
-                        </Item>
-                    </Grid>
-                </Grid>
-            </Box>
+        <div className="container-fluid text-center">
+            <div className="row">
+                <div className="col-md-4">
+                    <h1>Projects</h1>
+                    <Box sx={{ width: '100%', boxShadow: 1, borderRadius: 2, margin: 3, padding: 3, }}>
+                        <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} direction="row">
+                            <Grid item xs={6}>
+                                <Item>
+                                    <div>
+                                        {projects.map((project, i) => (
+                                            <CardInfo
+                                                key={i}
+                                                name={project.name}
+                                                image={project.image}
+                                                description={project.description}
+                                                technologies={project.technologies}
+                                                sourceCode={project.sourceCode}
+                                                livePreview={project.livePreview}
+                                            />
+                                        ))}
+                                    </div>
+                                </Item>
+                            </Grid>
+                        </Grid>
+                    </Box>
+                </div>                
+            </div>            
         </div>
     );
 }
