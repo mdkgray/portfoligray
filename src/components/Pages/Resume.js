@@ -1,49 +1,55 @@
 import React from 'react';
 import { skills } from '../../content';
-import { styled } from '@mui/material/styles';
+import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
-import Grid from '@mui/material/Grid';
-import ImageList from '@mui/material/ImageList';
-import ImageListItem from '@mui/material/ImageListItem';
-
-const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-    ...theme.typography.body2,
-    padding: theme.spacing(1),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-}));
+import Grid from '@mui/material/Unstable_Grid2';
 
 export default function Resume() {
     return (
-        <Box sx={{ flexGrow: 1 }}>
-            <Grid container spacing={2} padding={4}>
-                <Grid item xs={4}>
-                    <Item>
-                        <h5>Check out my resume:</h5>
-                    </Item>
+        <Container sx={{ flexGrow: 1 }} columns={{ xs: 2, sm: 4, md: 6 }}>
+            <Grid 
+                    container 
+                    spacing={{ xs: 2, md: 3 }}
+                    columns={{ xs: 1, sm: 8, md: 12 }} 
+                    padding={4}
+                    display="flex" 
+                    justifyContent="center" 
+                    alignItems="center"
+                >                    
+                <Grid 
+                    item xs={4}
+                    padding={4}
+                    margin={3}
+                    >
+                    <h2>Resume</h2>
                 </Grid>
-                <Grid item xs={8}>
-                    <h5>Skills</h5>
-                    <Item>
-                        <ImageList sx={{ width: 500, height: 450 }} cols={4} rowHeight={164} padding={4}>
+
+                <Box columns={{ xs: 2, sm: 4, md: 6 }}>
+                    <h2>Skills</h2>
+                    <Grid 
+                        container 
+                        spacing={{ xs: 2, md: 3 }} 
+                        columns={{ xs: 2, sm: 4, md: 6 }}
+                        padding={4}
+                        margin={3}
+                        display="flex" 
+                        justifyContent="center" 
+                        alignItems="center"
+                        >
                         {skills.map((skills) => (
-                            <ImageListItem key={skills.image}>
                             <img
-                                src={process.env.PUBLIC_URL + `${skills.image}?w=164&h=164&fit=crop&auto=format`}
-                                srcSet={process.env.PUBLIC_URL + `${skills.image}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                src={process.env.PUBLIC_URL + `${skills.image}`}
+                                srcSet={process.env.PUBLIC_URL + `${skills.image}`}
                                 alt={skills.name}
-                                loading="lazy"
+                                height="150"
+                                width="150"
+                                spacing={{ xs: 2, md: 3 }}
+                                padding={{ xs: 2, md: 3 }}
                             />
-                            </ImageListItem>
                         ))}
-                        </ImageList>
-                    </Item>
-                </Grid>
+                    </Grid>
+                </Box>
             </Grid>
-        </Box>
+        </Container>
     );
 }
-
-// add a tag for link to resume and add icons for skills 
