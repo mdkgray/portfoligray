@@ -31,8 +31,8 @@ export default function Resume() {
                         {skills.map((skills) => (
                             <ImageListItem key={skills.image}>
                             <img
-                                src={`${skills.image}?w=164&h=164&fit=crop&auto=format`}
-                                srcSet={`${skills.image}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                src={process.env.PUBLIC_URL + `${skills.image}?w=164&h=164&fit=crop&auto=format`}
+                                srcSet={process.env.PUBLIC_URL + `${skills.image}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
                                 alt={skills.name}
                                 loading="lazy"
                             />
