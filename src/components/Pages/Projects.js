@@ -18,12 +18,12 @@ const Item = styled(Paper)(({ theme }) => ({
 export default function Projects() {
     return (
         <div className="container-fluid text-center">
-            <div className="row">
+            <div className="row d-flex">
                 <div className="col-md-4">
                     <h1>Projects</h1>
-                    <Box sx={{ width: '100%', boxShadow: 1, borderRadius: 2, margin: 3, padding: 3, }}>
-                        <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} direction="row">
-                            <Grid item xs={6}>
+                    <Box >
+                        <Grid >
+                            <Grid >
                                 <Item>
                                     <div>
                                         {projects.map((project, i) => (
