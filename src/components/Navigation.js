@@ -18,7 +18,6 @@ function Navigation() {
             <header className="top-header">
                 <nav className='nav-list'>
                     <Stack spacing={2} direction="row">
-                        <ul className="nav-list flex-row"></ul>
                         <Button variant="text">{navList}</Button>
                     </Stack>                    
                 </nav>

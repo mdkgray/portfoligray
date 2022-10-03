@@ -5,6 +5,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import Link from '@mui/material/Link';
 
 export default function CardInfo(props) {
     return (
@@ -28,8 +29,12 @@ export default function CardInfo(props) {
                 </Typography>
             </CardContent>
             <CardActions>
-                <a href={props.sourceCode} target="_blank" rel="noopener noreferrer"><Button size="small" variant="contained">GitHub</Button></a>
-                <a href={props.livePreview} target="_blank" rel="noopener noreferrer"><Button size="small" variant="outlined">Deployed</Button></a>
+                <Link href={props.sourceCode} target="_blank" rel="noopener noreferrer" underline="none">
+                    <Button size="small" variant="contained">GitHub</Button>
+                </Link>
+                <Link href={props.livePreview} target="_blank" rel="noopener noreferrer" underline="none">
+                    <Button size="small" variant="outlined">Deployed</Button>
+                </Link>
             </CardActions>
         </Card> 
     )

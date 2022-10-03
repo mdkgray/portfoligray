@@ -6,7 +6,7 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
-
+import Link from '@mui/material/Link';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -23,11 +23,11 @@ export default function Contact() {
                     <h1>Contact</h1>
                     <p>Get in touch</p>
                     <div>
-                        <a href="mailto:mdkulen@gmail.com">
+                        <Link href="mailto:mdkulen@gmail.com" underline="none">
                             <Stack spacing={2} direction="row" centered={'true'}>
                                 <Button variant="contained" className="mx-auto"><EmailIcon className="m-1"/>mdkulen@gmail</Button>
                             </Stack>
-                        </a>
+                        </Link>
                     </div>
                     <div>
                         <a href={about.social.github} target="_blank" rel="noopener noreferrer" className="mx-2"><GitHubIcon /></a>

@@ -68,18 +68,38 @@ const projects = [
 ]
 
 const skills = [
-    'HTML',
-    'CSS',
-    'JavaScript',
-    'Express',
-    'Node',
-    'MySQL',
-    'MongoDB',
-    'NoSQL',
-    'React',
-    'Material UI',
-    'Git',
-    'MERN',
+    {
+        name: 'HTML', 
+        image: '/assets/icons/html.png'
+    },
+    {
+        name: 'CSS', 
+        image: '/assets/icons/css.png'
+    },
+    {
+        name: 'Javascript',
+        image: '/assets/icons/js.png'
+    }, 
+    {
+        name: 'Node', 
+        image: '/assets/icons/node.png'
+    }, 
+    {
+        name: 'MongoDB', 
+        image: '/assets/icons/mongodb.png'
+    }, 
+    {
+        name: 'MySQL', 
+        image: '/assets/icons/mysql.png'
+    }, 
+    {
+        name: 'React', 
+        image: '/assets/icons/react.png'
+    },
+    {
+        name: 'Github',
+        image: '/assets/icons/github.png'
+    }
 ]
 
 const contact = {
