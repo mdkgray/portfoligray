@@ -29,7 +29,11 @@ function Header() {
                         />
                     </IconButton>
 
-                    <Typography variant="h4" component="div" sx={{ flexGrow: 1, alignItems: 'center' }}>
+                    <Typography 
+                        variant="h4" 
+                        component="div" 
+                        sx={{ flexGrow: 1, alignItems: 'center' }}
+                        >
                         Mackenzie Gray
                     </Typography>
 
