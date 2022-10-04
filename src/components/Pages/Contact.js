@@ -91,7 +91,8 @@ export default function Contact() {
                                 margin={5}
                                 >
                                 <Link 
-                                    href="mailto:mdkulen@gmail.com" underline="none"
+                                    href="mailto:mdkulen@gmail.com" 
+                                    underline="none"
                                     display="flex" 
                                     justifyContent="center"
                                     columns={{ xs: 1, sm: 8, md: 12 }}>

@@ -106,4 +106,8 @@ const contact = {
     email: 'mdkulen@gmail.com'
 }
 
-export { header, about, projects, skills, contact }
+const resume = {
+    resume: '/resume/mdkgray.pdf'
+}
+
+export { header, about, projects, skills, contact, resume }

@@ -1,11 +1,14 @@
 import React from 'react';
-import { skills } from '../../content';
+import { skills, resume } from '../../content';
 import { styled } from '@mui/material/styles';
-
+import Link from '@mui/material/Link';
 import Paper from '@mui/material/Paper';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Unstable_Grid2';
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
+import DownloadIcon from '@mui/icons-material/Download';
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#001C55' : '#fff',
@@ -14,6 +17,8 @@ const Item = styled(Paper)(({ theme }) => ({
     textAlign: 'center',
     color: theme.palette.text.secondary,
 })); 
+
+const preventDefault = (event) => event.preventDefault();
 
 export default function Resume() {
     return (
@@ -33,6 +38,27 @@ export default function Resume() {
                     margin={3}
                     >
                     <h2>Resume</h2>
+                    <br />
+                    <Box
+                        sx={{
+                            typography: 'body1',
+                            '& > :not(style) + :not(style)': {
+                            ml: 2,
+                            },
+                        }}
+                        onClick={preventDefault}
+                        >
+                        <Link 
+                            href={resume}
+                            download={resume}
+                            underline="none"
+                            display="flex" 
+                            justifyContent="center">
+                            <Stack spacing={2} direction="row">
+                                <Button size="large" variant="contained"><DownloadIcon /> Download Resume</Button>
+                            </Stack>
+                        </Link>
+                    </Box>                    
                 </Grid>
 
                 <Item>
