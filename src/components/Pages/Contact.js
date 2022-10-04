@@ -1,11 +1,9 @@
-import React from 'react';
+import React, { useState } from "react";
 import { about } from '../../content';
 import { styled } from '@mui/material/styles';
-
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
-
 import TextField from '@mui/material/TextField';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
@@ -15,6 +13,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import EmailIcon from '@mui/icons-material/Email';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import { validateEmail, capitalizeFirstLetter } from '../../utils/helper';
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#001C55' : '#fff',
@@ -26,6 +25,42 @@ const Item = styled(Paper)(({ theme }) => ({
 
 
 export default function Contact() {
+    const [formState, setFormState ] = useState({
+        name: '',
+        email: '',
+        message: '',
+    });
+
+    const [errorMessage, setErrorMessage] = useState('');
+    const { name, email, message } = formState;
+
+    function handleFormChange(event) {
+        if (event.target.name === 'email') {
+            const isValid = validateEmail(event.target.value);
+            if (!isValid) {
+                setErrorMessage('Email is not valid');
+            } else {
+                setErrorMessage('');
+            }
+        } else {
+            if (!event.target.value.length) {
+                setErrorMessage(capitalizeFirstLetter(`${event.target.name} is required`));
+            } else {
+                setErrorMessage('');
+            }
+        }
+        if (!errorMessage) {
+            setFormState({ ...formState, [event.target.name]: event.target.value });
+        }
+    }
+
+    function handleFormSubmit(event) {
+        event.preventDefault();
+        if (!errorMessage) {
+            console.log(formState);
+        }
+    }
+
     return (
         <Box sx={{ flexGrow: 1 }}>
             <Grid 
@@ -102,21 +137,29 @@ export default function Contact() {
                                     label="Name"
                                     placeholder="Enter Name"
                                     multiline
+                                    onChange={handleFormChange}
                                 />
                                 <TextField
                                     id="outlined-textarea"
                                     label="Email"
                                     placeholder="example@example.com"
                                     multiline
+                                    onChange={handleFormChange}
                                 />
                                 <TextField
                                     id="outlined-multiline-static"
                                     label="What's on your mind?"
                                     multiline
                                     rows={5}
+                                    onChange={handleFormChange}
                                 />
                                 <Stack spacing={2} direction="row" margin={3}>
-                                    <Button variant="contained" className="mx-auto">Submit</Button>
+                                    <Button 
+                                        variant="contained" 
+                                        className="mx-auto"
+                                        onSubmit={handleFormSubmit}
+                                        >
+                                        Submit</Button>
                                 </Stack>
                             </Box>
                         </Box>
