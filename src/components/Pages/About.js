@@ -5,8 +5,9 @@ import Box from '@mui/material/Box';
 export default function About() {
     return (
         <Container sx={{ flexGrow: 1 }} columns={{ xs: 2, sm: 4, md: 6, lg: 9 }}>
-            <Box>
-                <h1>About Me</h1>
+            <Box
+                margin={5}
+                padding={4}>
                 <img src={process.env.PUBLIC_URL + '/assets/images/headshot.png'} alt={'headshot'} className="img-fluid rounded-circle"></img>
             </Box>
             <Box 

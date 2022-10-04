@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { about } from '../../content';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
@@ -65,13 +66,17 @@ export default function Contact() {
     }
 
     return (
-        <Box sx={{ flexGrow: 1 }}>
+        <Box 
+            sx={{ flexGrow: 1 }}
+            columns={{ xs: 1, sm: 6, md: 8, lg:10 }}
+            margin={5}>
             <Grid 
                 container 
                 spacing={3}
                 padding={4}
                 display="flex" 
-                justifyContent="center" 
+                justifyContent="center"
+                columns={{ xs: 1, sm: 6, md: 8, lg:10 }} 
                 >
                 <Grid item xs={11} md={4}>
                     <Item>

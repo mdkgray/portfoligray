@@ -7,10 +7,10 @@ import { about } from '../content';
 
 function Footer() {
     return (
-    <div className="fixed-bottom m-3">
-        <a href={about.social.github} target="_blank" rel="noopener noreferrer" className="mx-2"><GitHubIcon /></a>
-        <a href={about.social.linkedin} target="_blank" rel="noopener noreferrer" className="mx-2"><LinkedInIcon /></a>
-        <a href={about.social.twitter} target="_blank" rel="noopener noreferrer" className="mx-2"><TwitterIcon /></a>
+    <div className="m-3">
+        <a href={about.social.github} target="_blank" rel="noopener noreferrer" className="mx-4"><GitHubIcon /></a>
+        <a href={about.social.linkedin} target="_blank" rel="noopener noreferrer" className="mx-4"><LinkedInIcon /></a>
+        <a href={about.social.twitter} target="_blank" rel="noopener noreferrer" className="mx-4"><TwitterIcon /></a>
     </div>
     )
 }

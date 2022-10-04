@@ -1,6 +1,6 @@
 import React from 'react'
 import Navigation from './Navigation';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -17,31 +17,29 @@ function Header() {
                 justifycontent="center"
                 columns={{ xs: 1, sm: 8, md: 12 }}>
                 <Toolbar>
-                    <IconButton
-                        size="large"
-                        edge="start"
-                        color="inherit"
-                        aria-label="menu"
-                        sx={{ mr: 2 }}
-                    >
-                        <img
-                            alt="zorb"
-                            src={process.env.PUBLIC_URL + "/assets/images/ZORB.png"}
-                            width="40"
-                            height="40"
-                            className="d-inline-block align-top"
-                        />
-                    </IconButton>
-
-                    <Typography 
-                        variant="h4" 
-                        component="div" 
-                        sx={{ flexGrow: 1, alignItems: 'center' }}
-                        >
-                        Mackenzie Gray
-                    </Typography>
-
-                    <Navigation />
+                    <div className='d-flex flex-wrap p-2 col justify-content-center'>
+                        <div>
+                            <IconButton
+                                size="large"
+                                edge="start"
+                                color="inherit"
+                                aria-label="menu"
+                                sx={{ mr: 2 }}
+                            >
+                                <img
+                                    alt="zorb"
+                                    src={process.env.PUBLIC_URL + "/assets/images/ZORB.png"}
+                                    width="40"
+                                    height="40"
+                                    className="d-inline-block align-top"
+                                />
+                                <h4 className="mx-3">Mackenzie Gray</h4>
+                            </IconButton>
+                        </div>
+                        <div>
+                            <Navigation className='float-end float-md-start' />
+                        </div>
+                    </div>                    
                 </Toolbar>
             </AppBar>
         </Box>
