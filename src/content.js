@@ -107,7 +107,7 @@ const contact = {
 }
 
 const resume = {
-    resume: '/resume/mdkgray.pdf'
+    resume: '/assets/resume/mdkgray.pdf'
 }
 
 export { header, about, projects, skills, contact, resume }
