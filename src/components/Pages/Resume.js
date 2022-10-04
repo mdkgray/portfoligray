@@ -47,14 +47,17 @@ export default function Resume() {
                             ml: 2,
                             },
                         }}>
-                        <Link 
-                            to={resume.resume}
+                        <Link
+                            href={resume.resume}
                             download
                             underline="none"
-                            display="flex" 
-                            justifyContent="center">
+                            display="flex"
+                            justifyContent="center"
+                            >
                             <Stack spacing={2} direction="row">
-                                <Button size="large" variant="contained"><DownloadIcon /> Download Resume</Button>
+                                <Button size="large" variant="contained">
+                                <DownloadIcon /> Download Resume
+                                </Button>
                             </Stack>
                         </Link>
                     </Box>                    

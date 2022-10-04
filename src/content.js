@@ -107,7 +107,7 @@ const contact = {
 }
 
 const resume = {
-    resume: '/assets/resume/mdkgray.pdf'
+    resume: '/portfoligray/assets/resume/mdkgray.pdf'
 }
 
 export { header, about, projects, skills, contact, resume }
