@@ -78,11 +78,12 @@ export default function Contact() {
                 columns={{ xs: 1, sm: 6, md: 8, lg:10 }} 
                 >
                 <Grid item xs={11} md={4}>
-                    <Item>
+                    <Item className='border'>
                         <Box 
                             spacing={3}
                             padding={4}
                             margin={5}
+                            className='border'
                             >
                             <h1>Lets Connect</h1>
                             <Box 
@@ -127,7 +128,7 @@ export default function Contact() {
                     justifyContent="center"
                     columns={{ xs: 1, sm: 8, md: 12 }}
                     >
-                    <Item>
+                    <Item className='border d-flex row col-md-11'>
                         <Box
                             component="form"
                             sx={{ '& .MuiTextField-root': { m: 1, width: '50ch'}}}
@@ -139,7 +140,9 @@ export default function Contact() {
                             >
                             <Box 
                                 padding={2}
-                                margin={1}>
+                                margin={1}
+                                className='border d-flex row col-md-6 justify-content-center'>
+                                    
                                 <TextField
                                     id="outlined-textarea"
                                     label="Name"

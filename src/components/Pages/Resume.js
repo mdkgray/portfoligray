@@ -1,6 +1,7 @@
 import React from 'react';
 import { skills, resume } from '../../content';
 import { styled } from '@mui/material/styles';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Link from '@mui/material/Link';
 import Paper from '@mui/material/Paper';
 import Container from '@mui/material/Container';
@@ -77,10 +78,11 @@ export default function Resume() {
                                     src={process.env.PUBLIC_URL + `${skills.image}`}
                                     srcSet={process.env.PUBLIC_URL + `${skills.image}`}
                                     alt={skills.name}
-                                    height="150"
-                                    width="150"
+                                    height="200"
+                                    width="200"
                                     spacing={{ xs: 2, md: 3 }}
                                     padding={{ xs: 2, md: 3 }}
+                                    className='p-4'
                                 />
                             ))}
                         </Grid>
