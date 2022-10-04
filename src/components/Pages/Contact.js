@@ -24,7 +24,6 @@ const Item = styled(Paper)(({ theme }) => ({
     color: theme.palette.text.secondary,
 }));  
 
-
 export default function Contact() {
     const [formState, setFormState ] = useState({
         name: '',

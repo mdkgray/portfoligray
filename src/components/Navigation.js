@@ -18,8 +18,7 @@ function Navigation() {
         )
     });
 
-    console.log(useLocation().pathname);
-    
+    console.log(useLocation().pathname);   
     
     return (
         <Box
