@@ -18,7 +18,7 @@ const Item = styled(Paper)(({ theme }) => ({
     color: theme.palette.text.secondary,
 })); 
 
-const preventDefault = (event) => event.preventDefault();
+console.log(resume);
 
 export default function Resume() {
     return (
@@ -45,11 +45,9 @@ export default function Resume() {
                             '& > :not(style) + :not(style)': {
                             ml: 2,
                             },
-                        }}
-                        onClick={preventDefault}
-                        >
+                        }}>
                         <Link 
-                            href={resume}
+                            to={resume.resume}
                             download
                             underline="none"
                             display="flex" 
