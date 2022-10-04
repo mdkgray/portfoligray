@@ -6,6 +6,10 @@
 
 A portfolio to showcase my skills and previous projects in web development. This application was made with React and MUI as the React UI. 
 
+# Link to deployed application
+
+[Click here to view portfolio](https://mdkgray.github.io/portfoligray/)
+
 # Table of Contents
 
 * [Usage](#Usage)
