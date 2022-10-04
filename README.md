@@ -4,7 +4,7 @@
 
 ## Description
 
-A portfolio to showcase my skills and previous projects in web development. This application was made with React and MUI as the React UI. 
+A portfolio to showcase my skills and some of my previous projects in web development. This application was made with React and MUI as the React UI. 
 
 ## User Story
 
