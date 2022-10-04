@@ -11,11 +11,10 @@ import IconButton from '@mui/material/IconButton';
 function Header() {
     return (    
         <Box sx={{ flexGrow: 1, height: 100 }}>
-            <AppBar 
-                
+            <AppBar                
                 container
                 display="flex" 
-                justifyContent="center"
+                justifycontent="center"
                 columns={{ xs: 1, sm: 8, md: 12 }}>
                 <Toolbar>
                     <IconButton

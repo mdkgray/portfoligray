@@ -41,13 +41,13 @@ export default function Contact() {
             const isValid = validateEmail(event.target.value);
             console.log(isValid);
             if (!isValid) {
-                setErrorMessage('Email is not valid');
+                setErrorMessage('Email required and must be valid');
             } else {
                 setErrorMessage('');
             }
         } else {
             if (!event.target.value.length) {
-                setErrorMessage(capitalizeFirstLetter(`${event.target.name} is required`));
+                setErrorMessage(capitalizeFirstLetter(`${event.target.name} is a required field`));
             } else {
                 setErrorMessage('');
             }
@@ -167,8 +167,8 @@ export default function Contact() {
                                         >
                                         Submit</Button>
                                 </Stack>
+                                {errorMessage && (<p>{errorMessage}</p>)}
                             </Box>
-                            {errorMessage && (<p>{errorMessage}</p>)}
                         </Box>
                     </Item>
                 </Grid>

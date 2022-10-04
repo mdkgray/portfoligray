@@ -8,7 +8,6 @@ import About from "./components/Pages/About";
 import Contact from "./components/Pages/Contact";
 import Projects from "./components/Pages/Projects";
 import Header from "./components/Header";
-
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 
@@ -19,9 +18,6 @@ const darkTheme = createTheme({
 });
 
 function App() {
-
-  console.log(window.location.pathname);
-
   return (
     <div className="App">
       <ThemeProvider 
