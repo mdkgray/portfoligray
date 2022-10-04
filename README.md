@@ -2,36 +2,36 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-# Description
+## Description
 
 A portfolio to showcase my skills and previous projects in web development. This application was made with React and MUI as the React UI. 
 
-# Link to deployed application
+## Link to deployed application
 
 [Click here to view portfolio](https://mdkgray.github.io/portfoligray/)
 
-# Table of Contents
+## Table of Contents
 
 * [Usage](#Usage)
 * [License](#License)
 * [Acknowledgments](#Acknowledgments)
 * [Questions](#Questions)
 
-# Usage
+## Usage
 
 Wander your way through the application and contact with any questions. 
 
-# License
+## License
 
 MIT
 
 #### For more information on the license, click the badge icon in the title section.
 
-# Acknowledgments
+## Acknowledgments
 
 University of Sydney Coding Bootcamp
 
-# Questions
+## Questions
 
 ### For further information contact using the following:
 
