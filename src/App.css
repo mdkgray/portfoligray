@@ -4,6 +4,14 @@
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+.currentPage {
+  color: orange
+}
+
+/* .none {
+  color: blue
+} */
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

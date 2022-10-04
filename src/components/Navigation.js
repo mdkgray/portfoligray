@@ -1,20 +1,25 @@
 import React from 'react';
 import { NavList } from "./NavList"
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Box from '@mui/material/Box';
 
 function Navigation() {
+    let currentTab = useLocation().pathname;
+
     const navList = NavList.map(({ url, name }, index) => {
         return(
             <Button>
                 <p key={index}>
-                    <NavLink to={url} style={{ textDecoration: 'none' }} activeclassname="active">{name}</NavLink>
+                    <NavLink to={url} style={{ textDecoration: 'none' }} activeclassname="active" className={currentTab === url ? "currentPage" : 'none'}>{name}</NavLink>
                 </p>
             </Button>        
         )
     });
+
+    console.log(useLocation().pathname);
+    
     
     return (
         <Box

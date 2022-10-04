@@ -35,8 +35,11 @@ export default function Contact() {
     const { name, email, message } = formState;
 
     function handleFormChange(event) {
+        console.log(event.target.name);
+        console.log(event.target.value);
         if (event.target.name === 'email') {
             const isValid = validateEmail(event.target.value);
+            console.log(isValid);
             if (!isValid) {
                 setErrorMessage('Email is not valid');
             } else {
@@ -135,23 +138,26 @@ export default function Contact() {
                                 <TextField
                                     id="outlined-textarea"
                                     label="Name"
+                                    name='name'
                                     placeholder="Enter Name"
                                     multiline
-                                    onChange={handleFormChange}
+                                    onBlur={handleFormChange}
                                 />
                                 <TextField
                                     id="outlined-textarea"
                                     label="Email"
+                                    name='email'
                                     placeholder="example@example.com"
                                     multiline
-                                    onChange={handleFormChange}
+                                    onBlur={handleFormChange}
                                 />
                                 <TextField
                                     id="outlined-multiline-static"
                                     label="What's on your mind?"
+                                    name='message'
                                     multiline
                                     rows={5}
-                                    onChange={handleFormChange}
+                                    onBlur={handleFormChange}
                                 />
                                 <Stack spacing={2} direction="row" margin={3}>
                                     <Button 
@@ -162,6 +168,7 @@ export default function Contact() {
                                         Submit</Button>
                                 </Stack>
                             </Box>
+                            {errorMessage && (<p>{errorMessage}</p>)}
                         </Box>
                     </Item>
                 </Grid>
