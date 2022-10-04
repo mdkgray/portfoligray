@@ -50,7 +50,7 @@ export default function Resume() {
                         >
                         <Link 
                             href={resume}
-                            download={resume}
+                            download
                             underline="none"
                             display="flex" 
                             justifyContent="center">
