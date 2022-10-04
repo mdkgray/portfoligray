@@ -6,6 +6,14 @@
 
 A portfolio to showcase my skills and previous projects in web development. This application was made with React and MUI as the React UI. 
 
+## User Story
+
+```
+AS AN employer looking for candidates with experience building single-page applications
+I WANT to view a potential employee's deployed React portfolio of work samples
+SO THAT I can assess whether they're a good candidate for an open position
+```
+
 ## Link to deployed application
 
 [Click here to view portfolio](https://mdkgray.github.io/portfoligray/)
@@ -13,6 +21,7 @@ A portfolio to showcase my skills and previous projects in web development. This
 ## Table of Contents
 
 * [Usage](#Usage)
+* [Screenshots](#Screenshots)
 * [License](#License)
 * [Acknowledgments](#Acknowledgments)
 * [Questions](#Questions)
@@ -20,6 +29,13 @@ A portfolio to showcase my skills and previous projects in web development. This
 ## Usage
 
 Wander your way through the application and contact with any questions. 
+
+## Screenshots
+
+![Screenshot1](./public/assets/screenshots/screenshot1.png)
+![Screenshot2](./public/assets/screenshots/screenshot2.png)
+![Screenshot3](./public/assets/screenshots/screenshot3.png)
+![Screenshot4](./public/assets/screenshots/screenshot4.png)
 
 ## License
 
