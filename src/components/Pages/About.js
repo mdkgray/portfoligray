@@ -17,7 +17,7 @@ export default function About() {
                 <h3>Hi I'm Mackenzie</h3>
                 <br />
                 <h5>
-                    I am a full stack developer based in Sydney, Australia. With a focus on attention to detail, creating polished and efficient code and working with people, my passion lies in software development and product management in the technology space.
+                    I am a full stack developer based in Sydney, Australia. An eager learner, team player and someone that takes tremendous pride in their work and attention to detail. My passion lies in software development and product management in the technology space.
                 </h5>
                 <br />
                 <h5>
