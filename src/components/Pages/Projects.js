@@ -9,7 +9,7 @@ import Box from '@mui/material/Box';
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#001C55' : '#fff',
     ...theme.typography.body2,
-    padding: theme.spacing(2),
+    padding: theme.spacing(0),
     textAlign: 'center',
     color: theme.palette.text.secondary,
 }));
