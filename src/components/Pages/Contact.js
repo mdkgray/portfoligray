@@ -83,7 +83,6 @@ export default function Contact() {
                             spacing={3}
                             padding={4}
                             margin={5}
-                            className='border'
                             >
                             <h1>Lets Connect</h1>
                             <Box 
@@ -141,7 +140,7 @@ export default function Contact() {
                             <Box 
                                 padding={2}
                                 margin={1}
-                                className='border d-flex row col-md-6 justify-content-center'>
+                                className='d-flex row col-md-6 justify-content-center'>
                                     
                                 <TextField
                                     id="outlined-textarea"
