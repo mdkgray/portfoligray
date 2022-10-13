@@ -26,6 +26,22 @@ const projects = [
         image: '/assets/projectImages/check_a_tradie.png'
     },
     {
+        name: 'bookMERN', 
+        description: 'An application designed and created for an avid book reader, bookMERN allows for the searching of new books to read which can be saved as a list for future reference and purchase. The front end is built using React which is served with a GraphQL API built with an Apollo server.', 
+        technologies: ['MongoDB | Express.js | React | Node.js | Mongoose | GraphQL | Javascript | JWT | Apollo-Server | Heroku'], 
+        sourceCode: 'https://github.com/mdkgray/bookMERN', 
+        livePreview: 'https://thawing-escarpment-08809.herokuapp.com/',
+        image: '/assets/projectImages/bookMERN.png'
+    },
+    {
+        name: 'Marvellous', 
+        description: 'Journey into the Marvel Universe and discover images of your favourite comics and characters using the Marvel API and Google Images API.', 
+        technologies: ['Javascript | HTML | CSS | Bootstrap | API'], 
+        sourceCode: 'https://github.com/mdkgray/marvel_universe', 
+        livePreview: 'https://mdkgray.github.io/marvel_universe/',
+        image: '/assets/projectImages/marvelgif.gif'
+    },
+    {
         name: 'Employee Tracker', 
         description: 'A command line application that can be used by a business owner to view and manage the departments, roles and employees in the company. Data in the database can be added, deleted and modified using prompts presented to the user in the command line.', 
         technologies: ['Javascript | MySQL | npm'], 
@@ -40,6 +56,14 @@ const projects = [
         sourceCode: 'https://github.com/mdkgray/tech_blog', 
         livePreview: 'https://frozen-basin-60308.herokuapp.com/',
         image: '/assets/projectImages/tech_blog.png'
+    },
+    {
+        name: 'README Generator',  
+        description: 'A tool to generate a README file. A developer can use this command-line application to quickly create a professional README file where the content of the README is populated from responses to questions about the project repository.', 
+        technologies: ['Node.js | Javascript | Command-Line'], 
+        sourceCode: 'https://github.com/mdkgray/README_generator', 
+        livePreview: 'https://github.com/mdkgray/README_generator',
+        image: '/assets/projectImages/README_generator.png'
     },
     {
         name: 'Weather Dashboard', 
