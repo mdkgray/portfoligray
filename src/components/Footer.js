@@ -18,7 +18,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 function Footer() {
     return (
-    <Box sx={{ width: '100%', maxWidth: 'auto', display: 'flex', justifyContent: 'center', position: 'fixed', bottom: 20, height: 'auto' }}>
+    <Box sx={{ width: '100%', maxWidth: 'auto', display: 'flex', justifyContent: 'center', bottom: 20, height: 'auto', marginBottom: 5  }}>
         <Stack 
             direction={{ xs: 'row', sm: 'row' }}
             spacing={{ xs: 1, sm: 2, md: 4 }}
