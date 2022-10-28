@@ -2,6 +2,21 @@ import React from 'react';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import Typography from '@mui/material/Typography';
+
+const theme = createTheme();
+
+theme.typography.h3 = {
+    fontSize: '1.2rem',
+    '@media (min-width:600px)': {
+        fontSize: '1.5rem',
+    },
+    [theme.breakpoints.up('md')]: {
+        fontSize: '2rem',
+    },
+};
+
 export default function About() {
     return (
         <Container sx={{ flexGrow: 1 }} columns={{ xs: 2, sm: 4, md: 6, lg: 9 }}>
@@ -12,17 +27,19 @@ export default function About() {
             </Box>
             <Box 
                 container
-                padding={3}
-                margin={3}>
-                <h3>Hi I'm Mackenzie</h3>
+                padding={1}
+                margin={2}>
+                <ThemeProvider theme={theme}>
+                    <Typography variant="h6">Problem solver with attention to detail with a certificate in full stack web development from University of Sydney, seeking a role as a front end developer with aspirations to transition into product management.</Typography>
+                </ThemeProvider>
                 <br />
-                <h5>
-                    I am a full stack developer based in Sydney, Australia. An eager learner, team player and someone that takes tremendous pride in their work and attention to detail. My passion lies in software development and product management in the technology space.
-                </h5>
+                <ThemeProvider theme={theme}>
+                    <Typography variant="h6">Past experiences as a semi-professional rugby player and Chiropractor have allowed me to become skilled in working within a team, communication, problem solving and professionalism. I thrive in a fast paced, quality driven team environment and thoroughly enjoy working with people and collaborating with other developers on projects.</Typography>
+                </ThemeProvider>
                 <br />
-                <h5>
-                    I have a certificate in full stack develop from the University of Sydney Coding Bootcamp. 
-                </h5>
+                <ThemeProvider theme={theme}>
+                    <Typography variant="h6">An eager learner, team player and someone that takes tremendous pride in their work and attention to detail, I am excited to apply the technical skills I have learnt with my collaborative nature and past experiences to write and produce efficient and clean code.</Typography>
+                </ThemeProvider>
             </Box>        
         </Container>
     );
