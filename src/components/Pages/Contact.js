@@ -14,10 +14,10 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import EmailIcon from '@mui/icons-material/Email';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import TelegramIcon from '@mui/icons-material/Telegram';
 import { validateEmail, capitalizeFirstLetter } from '../../utils/helper';
 
 const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === 'dark' ? '#001C55' : '#fff',
     ...theme.typography.body2,
     padding: theme.spacing(1),
     textAlign: 'center',
@@ -66,7 +66,7 @@ export default function Contact() {
 
     return (
         <Box 
-            sx={{ flexGrow: 1 }}
+            sx={{ flexGrow: 1, display: 'flex',}}
             columns={{ xs: 1, sm: 6, md: 8, lg:10 }}
             margin={5}>
             <Grid 
@@ -96,7 +96,7 @@ export default function Contact() {
                                     justifyContent="center"
                                     columns={{ xs: 1, sm: 8, md: 12 }}>
                                     <Stack spacing={2} direction="row" >
-                                        <Button variant="contained"><EmailIcon className="m-1"/>mdkulen@gmail</Button>
+                                        <Button variant="outlined"><EmailIcon className="m-1"/>mdkulen@gmail</Button>
                                     </Stack>
                                 </Link>
                                 <Stack 
@@ -108,40 +108,28 @@ export default function Contact() {
                                     columns={{ xs: 1, sm: 8, md: 12 }}>
                                     <Button variant="text"><LocationOnIcon />Sydney, Australia</Button>
                                 </Stack>
+                                <Stack
+                                    spacing={2} 
+                                    direction="row"
+                                    display="flex" 
+                                    justifyContent="center"
+                                    padding={4}
+                                    columns={{ xs: 1, sm: 8, md: 12 }}
+                                    >
+                                    <a href={about.social.github} target="_blank" rel="noopener noreferrer" className="mx-2"><GitHubIcon /></a>
+                                    <a href={about.social.linkedin} target="_blank" rel="noopener noreferrer" className="mx-2"><LinkedInIcon /></a>
+                                    <a href={about.social.twitter} target="_blank" rel="noopener noreferrer" className="mx-2"><TwitterIcon /></a>
+                                </Stack>
                             </Box>
-                            <Box 
-                                margin={2}>
-                                <a href={about.social.github} target="_blank" rel="noopener noreferrer" className="mx-2"><GitHubIcon /></a>
-                                <a href={about.social.linkedin} target="_blank" rel="noopener noreferrer" className="mx-2"><LinkedInIcon /></a>
-                                <a href={about.social.twitter} target="_blank" rel="noopener noreferrer" className="mx-2"><TwitterIcon /></a>
-                            </Box>
-                        </Box>
-                    </Item>
-                </Grid>
-
-                <Grid 
-                    item xs={11} 
-                    md={6}
-                    container
-                    display="flex" 
-                    justifyContent="center"
-                    columns={{ xs: 1, sm: 8, md: 12 }}
-                    >
-                    <Item className='border d-flex row col-md-11'>
-                        <Box
+                            <Box
                             component="form"
-                            sx={{ '& .MuiTextField-root': { m: 1, width: '50ch'}}}
+                            sx={{ '& .MuiTextField-root': { m: 1, width: "auto"}, flexGrow: 1, flexDirection: "column"}}
                             noValidate
                             autoComplete="off"
                             display="flex" 
                             justifyContent="center"
                             columns={{ xs: 1, sm: 8, md: 12 }}
                             >
-                            <Box 
-                                padding={2}
-                                margin={1}
-                                className='d-flex row col-md-6 justify-content-center'>
-                                    
                                 <TextField
                                     id="outlined-textarea"
                                     label="Name"
@@ -170,9 +158,10 @@ export default function Contact() {
                                     <Button 
                                         variant="contained" 
                                         className="mx-auto"
+                                        sx={{ width: '50%' }}
                                         onSubmit={handleFormSubmit}
                                         >
-                                        Submit</Button>
+                                        <TelegramIcon />Submit</Button>
                                 </Stack>
                                 {errorMessage && (<p>{errorMessage}</p>)}
                             </Box>

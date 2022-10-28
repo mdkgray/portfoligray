@@ -23,15 +23,9 @@ function Footer() {
             direction={{ xs: 'row', sm: 'row' }}
             spacing={{ xs: 1, sm: 2, md: 4 }}
             >
-            <Item>
                 <a href={about.social.github} target="_blank" rel="noopener noreferrer"><GitHubIcon /></a>
-            </Item>
-            <Item>
                 <a href={about.social.linkedin} target="_blank" rel="noopener noreferrer"><LinkedInIcon /></a>
-            </Item>
-            <Item>
                 <a href={about.social.twitter} target="_blank" rel="noopener noreferrer"><TwitterIcon /></a>
-            </Item>
         </Stack>        
     </Box>
     )
