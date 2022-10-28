@@ -18,6 +18,14 @@ const about = {
 
 const projects = [
     {
+        name: 'Firestarter', 
+        description: 'A DAO (decentralised autonomous organisation) inspired full stack MERN application to connect developers with developers, and assist in lighting the spark of innovation for projects. Developers can signup and post new projects they are working on as well as browse other projects from other developers. Projects of interest then have the ability to be funded by developers or people who are not signed up but browsing the site.', 
+        technologies: ['MongoDB | Express.js | React | Node.js | GraphQL | Javascript | Apollo | JWT | MUI | npm | Heroku'], 
+        sourceCode: 'https://github.com/mdkgray/fireStarter', 
+        livePreview: 'https://secret-headland-78641.herokuapp.com/',
+        image: '/assets/projectImages/firestarter.png'
+    },
+    {
         name: 'Check-A-Tradie', 
         description: 'Check-A-Tradie allows a tradesperson looking for work to display their services, skills and certification so that a consumer can browse a list of options for a service they need completing. A business owner can sign up and register their business, edit their dashboard and profile to showcase what they offer. Our application also allows consumers to be able to browse the selection of businesses and select one based on the job they require to be completed.', 
         technologies: ['Node.js | Express.js | MySQL | Sequelize | Javascript | Handlebars.js | Bootstrap | npm | Heroku'], 
@@ -40,14 +48,6 @@ const projects = [
         sourceCode: 'https://github.com/mdkgray/marvel_universe', 
         livePreview: 'https://mdkgray.github.io/marvel_universe/',
         image: '/assets/projectImages/marvelgif.gif'
-    },
-    {
-        name: 'Employee Tracker', 
-        description: 'A command line application that can be used by a business owner to view and manage the departments, roles and employees in the company. Data in the database can be added, deleted and modified using prompts presented to the user in the command line.', 
-        technologies: ['Javascript | MySQL | npm'], 
-        sourceCode: 'https://github.com/mdkgray/employee_tracker', 
-        livePreview: 'https://github.com/mdkgray/employee_tracker',
-        image: '/assets/projectImages/employee_tracker.png'
     },
     {
         name: 'Tech Blog', 
