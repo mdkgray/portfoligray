@@ -93,6 +93,34 @@ const projects = [
 
 const skills = [
     {
+        name: 'MongoDB', 
+        image: '/assets/icons/mongodb.png',
+    }, 
+    {
+        name: 'Express', 
+        image: '/assets/icons/express.png',
+    },
+    {
+        name: 'React', 
+        image: '/assets/icons/react.png'
+    },
+    {
+        name: 'Node', 
+        image: '/assets/icons/node.png'
+    }, 
+    {
+        name: 'Mongoose',
+        image: '/assets/icons/mongoose.png'
+    },
+    {
+        name: 'Apollo',
+        image: '/assets/icons/apollo.png'
+    },
+    {
+        name: 'GraphQL',
+        image: '/assets/icons/graphql.png'
+    },
+    {
         name: 'HTML', 
         image: '/assets/icons/html.png'
     },
@@ -102,23 +130,27 @@ const skills = [
     },
     {
         name: 'Javascript',
-        image: '/assets/icons/js.png'
-    }, 
+        image: '/assets/icons/javascript.png'
+    },
     {
-        name: 'Node', 
-        image: '/assets/icons/node.png'
-    }, 
+        name: 'MUI',
+        image: '/assets/icons/mui.png'
+    },
     {
-        name: 'MongoDB', 
-        image: '/assets/icons/mongodb.png'
-    }, 
+        name: 'JWT',
+        image: '/assets/icons/jwt.png'
+    },
+    {
+        name: 'npm',
+        image: '/assets/icons/npm.png'
+    },     
     {
         name: 'MySQL', 
         image: '/assets/icons/mysql.png'
     }, 
     {
-        name: 'React', 
-        image: '/assets/icons/react.png'
+        name: 'Heroku', 
+        image: '/assets/icons/heroku.png'
     },
     {
         name: 'Github',

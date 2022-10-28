@@ -32,6 +32,7 @@ function Navigation() {
             }}
             display="flex" 
                 justifyContent="center"
+                alignSelf='center'
                 columns={{ xs: 1, sm: 6, md: 8, lg:10 }} 
             >
             <ButtonGroup variant="text" aria-label="text button group" size="large">

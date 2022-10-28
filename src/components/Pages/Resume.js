@@ -1,7 +1,8 @@
 import React from 'react';
 import { skills, resume } from '../../content';
 import { styled } from '@mui/material/styles';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import Paper from '@mui/material/Paper';
 import Container from '@mui/material/Container';
@@ -11,12 +12,24 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import DownloadIcon from '@mui/icons-material/Download';
 
+const theme = createTheme({
+    typography: {
+        h3: {
+            color: 'black'
+        },
+        h2: {
+            color: 'white'
+        }
+    }
+});
+
 const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === 'dark' ? '#001C55' : '#fff',
+    backgroundColor: '#D3E3FD',
     ...theme.typography.body2,
     padding: theme.spacing(1),
     textAlign: 'center',
     color: theme.palette.text.secondary,
+    borderRadius: 20
 })); 
 
 console.log(resume);
@@ -29,16 +42,19 @@ export default function Resume() {
                     spacing={{ xs: 2, md: 3 }}
                     columns={{ xs: 1, sm: 8, md: 12 }} 
                     padding={4}
+                    margin={2}
                     display="flex" 
                     justifyContent="center" 
                     alignItems="center"
                 >                    
                 <Grid 
                     item xs={4}
-                    padding={4}
+                    padding={1}
                     margin={3}
                     >
-                    <h2>Resume</h2>
+                    <ThemeProvider theme={theme}>
+                        <Typography variant="h2">Resume</Typography>
+                    </ThemeProvider>
                     <br />
                     <Box
                         sx={{
@@ -56,7 +72,7 @@ export default function Resume() {
                             >
                             <Stack spacing={2} direction="row">
                                 <Button size="large" variant="contained">
-                                <DownloadIcon /> Download Resume
+                                <DownloadIcon /> Click here to download
                                 </Button>
                             </Stack>
                         </Link>
@@ -65,12 +81,14 @@ export default function Resume() {
 
                 <Item>
                     <Box columns={{ xs: 2, sm: 4, md: 6 }}>
-                        <h2>Skills</h2>
+                        <ThemeProvider theme={theme}>
+                            <Typography variant="h3">Proficiencies</Typography>
+                        </ThemeProvider>
                         <Grid 
                             container 
                             spacing={{ xs: 2, md: 3 }} 
                             columns={{ xs: 2, sm: 4, md: 6 }}
-                            padding={4}
+                            padding={3}
                             margin={3}
                             display="flex" 
                             justifyContent="center" 
@@ -85,13 +103,11 @@ export default function Resume() {
                                     width="200"
                                     spacing={{ xs: 2, md: 3 }}
                                     padding={{ xs: 2, md: 3 }}
-                                    className='p-4'
                                 />
                             ))}
                         </Grid>
                     </Box>
-                </Item>
-                
+                </Item>                
             </Grid>
         </Container>
     );
