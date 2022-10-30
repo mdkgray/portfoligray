@@ -41,7 +41,6 @@ export default function Resume() {
                     container 
                     spacing={{ xs: 2, md: 3 }}
                     columns={{ xs: 1, sm: 8, md: 12 }} 
-                    padding={4}
                     margin={2}
                     display="flex" 
                     justifyContent="center" 
@@ -91,7 +90,7 @@ export default function Resume() {
                             padding={3}
                             margin={3}
                             display="flex" 
-                            justifyContent="center" 
+                            justifyContent="space-around" 
                             alignItems="center"
                             >
                             {skills.map((skills) => (
@@ -99,8 +98,8 @@ export default function Resume() {
                                     src={process.env.PUBLIC_URL + `${skills.image}`}
                                     srcSet={process.env.PUBLIC_URL + `${skills.image}`}
                                     alt={skills.name}
-                                    height="200"
-                                    width="200"
+                                    height="150"
+                                    width="150"
                                     spacing={{ xs: 2, md: 3 }}
                                     padding={{ xs: 2, md: 3 }}
                                 />

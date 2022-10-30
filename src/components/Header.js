@@ -1,6 +1,5 @@
 import React from 'react'
 import Navigation from './Navigation';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -13,7 +12,7 @@ function Header() {
             <AppBar                
                 container
                 display="flex" 
-                justifycontent="center"
+                justifyContent="center"
                 columns={{ xs: 1, sm: 8, md: 12 }}>
                 <Toolbar>
                     <div className='d-flex flex-wrap p-2 col justify-content-center'>
