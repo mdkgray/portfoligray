@@ -5,7 +5,7 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
-import TextField from '@mui/material/TextField';
+// import TextField from '@mui/material/TextField';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import Link from '@mui/material/Link';
@@ -14,10 +14,11 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import EmailIcon from '@mui/icons-material/Email';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
-import TelegramIcon from '@mui/icons-material/Telegram';
-import { validateEmail, capitalizeFirstLetter } from '../../utils/helper';
+// import TelegramIcon from '@mui/icons-material/Telegram';
+// import { validateEmail, capitalizeFirstLetter } from '../../utils/helper';
 
 const Item = styled(Paper)(({ theme }) => ({
+    backgroundColor: '#292929',
     ...theme.typography.body2,
     padding: theme.spacing(1),
     textAlign: 'center',
@@ -34,35 +35,35 @@ export default function Contact() {
     const [errorMessage, setErrorMessage] = useState('');
     const { name, email, message } = formState;
 
-    function handleFormChange(event) {
-        console.log(event.target.name);
-        console.log(event.target.value);
-        if (event.target.name === 'email') {
-            const isValid = validateEmail(event.target.value);
-            console.log(isValid);
-            if (!isValid) {
-                setErrorMessage('Email required and must be valid');
-            } else {
-                setErrorMessage('');
-            }
-        } else {
-            if (!event.target.value.length) {
-                setErrorMessage(capitalizeFirstLetter(`${event.target.name} is a required field`));
-            } else {
-                setErrorMessage('');
-            }
-        }
-        if (!errorMessage) {
-            setFormState({ ...formState, [event.target.name]: event.target.value });
-        }
-    }
+    // function handleFormChange(event) {
+    //     console.log(event.target.name);
+    //     console.log(event.target.value);
+    //     if (event.target.name === 'email') {
+    //         const isValid = validateEmail(event.target.value);
+    //         console.log(isValid);
+    //         if (!isValid) {
+    //             setErrorMessage('Email required and must be valid');
+    //         } else {
+    //             setErrorMessage('');
+    //         }
+    //     } else {
+    //         if (!event.target.value.length) {
+    //             setErrorMessage(capitalizeFirstLetter(`${event.target.name} is a required field`));
+    //         } else {
+    //             setErrorMessage('');
+    //         }
+    //     }
+    //     if (!errorMessage) {
+    //         setFormState({ ...formState, [event.target.name]: event.target.value });
+    //     }
+    // }
 
-    function handleFormSubmit(event) {
-        event.preventDefault();
-        if (!errorMessage) {
-            console.log(formState);
-        }
-    }
+    // function handleFormSubmit(event) {
+    //     event.preventDefault();
+    //     if (!errorMessage) {
+    //         console.log(formState);
+    //     }
+    // }
 
     return (
         <Box 
@@ -121,7 +122,7 @@ export default function Contact() {
                                     <a href={about.social.twitter} target="_blank" rel="noopener noreferrer" className="mx-2"><TwitterIcon /></a>
                                 </Stack>
                             </Box>
-                            <Box
+                            {/* <Box
                             component="form"
                             sx={{ '& .MuiTextField-root': { m: 1, width: "auto"}, flexGrow: 1, flexDirection: "column"}}
                             noValidate
@@ -164,7 +165,7 @@ export default function Contact() {
                                         <TelegramIcon />Submit</Button>
                                 </Stack>
                                 {errorMessage && (<p>{errorMessage}</p>)}
-                            </Box>
+                            </Box> */}
                         </Box>
                     </Item>
                 </Grid>
