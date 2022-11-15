@@ -40,6 +40,14 @@ export default function About() {
                 <ThemeProvider theme={theme}>
                     <Typography variant="h6">An eager learner, team player and someone that takes tremendous pride in their work and attention to detail, I am excited to apply the technical skills I have learnt with my collaborative nature and past experiences to write and produce efficient and clean code.</Typography>
                 </ThemeProvider>
+                <br />
+                <ThemeProvider theme={theme}>
+                    <Typography variant="h6">Proficient in technologies such as MongoDB, Express, React, Node, Javascript, HTML, CSS, MySQL, Sequelize, GraphQL, npm and Git. Currently learning Python and Typescript.</Typography>
+                </ThemeProvider>
+                <br />
+                <ThemeProvider theme={theme}>
+                    <Typography variant="h6">Check out my <a href="https://github.com/mdkgray" target="_blank" rel="noopener noreferrer">GitHub</a> as well as my <a href="https://github.com/mdkgray/fireStarter" target="_blank" rel="noopener noreferrer">Firestarter</a>  project. More examples of some of my work found on the projects page of my portfolio.</Typography>
+                </ThemeProvider>
             </Box>        
         </Container>
     );

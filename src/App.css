@@ -5,6 +5,10 @@
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+html {
+  cursor: crosshair;
+}
+
 .currentPage {
   color: orange;
 }
