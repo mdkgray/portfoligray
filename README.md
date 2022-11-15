@@ -32,10 +32,10 @@ Wander your way through the application and contact with any questions.
 
 ## Screenshots
 
-![Screenshot1](./public/assets/screenshots/screenshot1.png)
-![Screenshot2](./public/assets/screenshots/screenshot2.png)
-![Screenshot3](./public/assets/screenshots/screenshot3.png)
-![Screenshot4](./public/assets/screenshots/screenshot4.png)
+![Screenshot1](./public/assets/screenshots/about.png)
+![Screenshot2](./public/assets/screenshots/projects.png)
+![Screenshot3](./public/assets/screenshots/resume.png)
+![Screenshot4](./public/assets/screenshots/contact.png)
 
 ## License
 
