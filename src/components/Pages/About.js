@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 
@@ -30,7 +31,11 @@ export default function About() {
                 padding={1}
                 margin={2}>
                 <ThemeProvider theme={theme}>
-                    <Typography variant="h6">Problem solver with attention to detail with a certificate in full stack web development from University of Sydney, seeking a role as a front end developer with aspirations to transition into product management.</Typography>
+                    <Typography variant="h6">Hi there! My name is Mackenzie Gray.</Typography>
+                </ThemeProvider>
+                <br />
+                <ThemeProvider theme={theme}>
+                    <Typography variant="h6">I have a certificate in full stack web development from the University of Sydney. Seeking a role as a software developer with aspirations to transition into product management.</Typography>
                 </ThemeProvider>
                 <br />
                 <ThemeProvider theme={theme}>
@@ -38,7 +43,7 @@ export default function About() {
                 </ThemeProvider>
                 <br />
                 <ThemeProvider theme={theme}>
-                    <Typography variant="h6">An eager learner, team player and someone that takes tremendous pride in their work and attention to detail, I am excited to apply the technical skills I have learnt with my collaborative nature and past experiences to write and produce efficient and clean code.</Typography>
+                    <Typography variant="h6">I am an eager learner, team player and someone that takes tremendous pride in their work. I am excited to apply the technical skills I have learnt with my collaborative nature and past experiences to write and produce efficient and clean code.</Typography>
                 </ThemeProvider>
                 <br />
                 <ThemeProvider theme={theme}>
@@ -46,7 +51,7 @@ export default function About() {
                 </ThemeProvider>
                 <br />
                 <ThemeProvider theme={theme}>
-                    <Typography variant="h6">Check out my <a href="https://github.com/mdkgray" target="_blank" rel="noopener noreferrer">GitHub</a> as well as my <a href="https://github.com/mdkgray/fireStarter" target="_blank" rel="noopener noreferrer">Firestarter</a>  project. More examples of some of my work found on the projects page of my portfolio.</Typography>
+                    <Typography variant="h6">Check out my <a href="https://github.com/mdkgray" target="_blank" rel="noopener noreferrer">GitHub</a> as well as my <a href="https://github.com/mdkgray/fireStarter" target="_blank" rel="noopener noreferrer">Firestarter</a>  project. More examples of some of my work found on the <Link to={'Projects'}>projects</Link> page of my portfolio.</Typography>
                 </ThemeProvider>
             </Box>        
         </Container>
