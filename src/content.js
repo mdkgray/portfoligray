@@ -22,7 +22,7 @@ const projects = [
         description: 'A DAO (decentralised autonomous organisation) inspired full stack MERN application to connect developers with developers, and assist in lighting the spark of innovation for projects. Developers can signup and post new projects they are working on as well as browse other projects from other developers. Projects of interest then have the ability to be funded by developers or people who are not signed up but browsing the site.', 
         technologies: ['MongoDB | Express.js | React | Node.js | GraphQL | Javascript | Apollo | JWT | MUI | npm | Heroku'], 
         sourceCode: 'https://github.com/mdkgray/fireStarter', 
-        livePreview: 'https://secret-headland-78641.herokuapp.com/',
+        livePreview: 'https://firestarter.herokuapp.com/',
         image: '/assets/projectImages/firestarter.png'
     },
     {
