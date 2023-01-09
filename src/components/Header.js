@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import Navigation from './Navigation';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -16,7 +17,10 @@ function Header() {
                 columns={{ xs: 1, sm: 8, md: 12 }}>
                 <Toolbar>
                     <div className='d-flex flex-wrap p-2 col justify-content-center'>
-                        <div>
+                        <Link 
+                            to={'/'} 
+                            style={{ textDecoration: 'none' }}
+                            >
                             <IconButton
                                 size="large"
                                 edge="start"
@@ -33,7 +37,7 @@ function Header() {
                                 />
                                 <h4 className="mx-3">Mackenzie Gray</h4>
                             </IconButton>
-                        </div>
+                        </Link>
                         <div>
                             <Navigation className='float-end float-md-start' />
                         </div>
