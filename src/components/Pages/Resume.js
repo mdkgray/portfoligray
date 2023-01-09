@@ -71,7 +71,7 @@ export default function Resume() {
                             >
                             <Stack spacing={2} direction="row">
                                 <Button size="large" variant="contained">
-                                <DownloadIcon /> Click here to download
+                                    <DownloadIcon /> Click here to download
                                 </Button>
                             </Stack>
                         </Link>
